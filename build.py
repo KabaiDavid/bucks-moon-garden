@@ -183,6 +183,11 @@ def build():
         left = re.findall(r"\{\{\w+\}\}|\[\[[^\]]+\]\]", doc)
         if left:
             raise SystemExit(f"{name}: unresolved {left}")
+        if name == "404.html":
+            # The 404 page is served at whatever URL was missed (e.g. /a/b/c),
+            # so every local link and asset must be root-absolute.
+            doc = re.sub(r'(\s(?:href|src))="(?![a-z]+:|#|/)', r'\1="/', doc)
+            doc = re.sub(r'(srcset="|, )assets/', r'\1/assets/', doc)
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
             f.write(doc)
         print("built", name, f"{len(doc) // 1024}kB")

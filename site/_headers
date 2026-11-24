@@ -1,0 +1,11 @@
+# Cloudflare Pages response headers.
+# Concept preview: keep it out of search engines so it is never mistaken for
+# the live buckslou.com. Remove the X-Robots-Tag line (and the robots meta tag
+# in src/partials/head.html, and site/robots.txt) when this becomes the real site.
+/*
+  X-Robots-Tag: noindex, nofollow
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*
+  Cache-Control: public, max-age=604800

@@ -279,24 +279,25 @@
   }
 
   /* ------------------------------------------------------------------
-     10. Forms — posts to the host's form handler (Netlify Forms-ready).
-         Without a handler, the guest is told plainly to call instead.
+     10. Forms — static hosting has no form server, so each form composes
+         an email to Buck's in the guest's own mail app (mailto). Works on
+         Cloudflare Pages or any static host, with no backend.
      ------------------------------------------------------------------ */
+  const MAILTO = "bucks@buckslou.com";
   $$("form[data-form]").forEach((form) => {
-    form.addEventListener("submit", async (e) => {
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
       const note = $("[data-form-note]", form);
-      const btn = $("button[type=submit]", form);
-      btn.disabled = true;
-      try {
-        const res = await fetch(form.getAttribute("action") || "/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(form)).toString() });
-        if (!res.ok) throw new Error(res.status);
-        form.reset();
-        note.textContent = form.dataset.success || "Thank you — we'll be in touch shortly.";
-      } catch (err) {
-        note.textContent = "We couldn't send that just now. Please call us on (502) 637-5284 or email bucks@buckslou.com.";
-      } finally { btn.disabled = false; }
+      const lines = [];
+      $$("input, select, textarea", form).forEach((f) => {
+        if (!f.name || f.type === "hidden" || !f.value.trim()) return;
+        const lab = form.querySelector(`label[for="${f.id}"]`);
+        lines.push(`${lab ? lab.textContent.trim() : f.name}: ${f.value.trim()}`);
+      });
+      const subject = form.dataset.subject || "Message from the website";
+      window.location.href = `mailto:${MAILTO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n") + "\n")}`;
+      note.innerHTML = `Your email app should now open with your message — just press send. If nothing opened, email <a class="link" href="mailto:${MAILTO}">${MAILTO}</a> or call <a class="link" href="tel:+15026375284">(502) 637-5284</a>.`;
     });
   });
 

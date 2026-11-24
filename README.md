@@ -12,6 +12,20 @@ cd site && python3 -m http.server 8765
 
 Then open http://localhost:8765.
 
+## Deploy (Cloudflare Pages)
+
+The finished site is already built and committed in `site/`, so Cloudflare doesn't need to build anything.
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | `None` |
+| Build command | *(leave empty)* |
+| Build output directory | `site` |
+| Root directory | *(leave empty)* |
+| Environment variables | none |
+
+`site/_headers` keeps this concept preview out of search engines; `site/robots.txt` and a `noindex` tag in `src/partials/head.html` do the same. Remove all three when this becomes the real buckslou.com. Cloudflare serves `site/404.html` for any missing page.
+
 ## Structure
 
 | Path | What it is |
