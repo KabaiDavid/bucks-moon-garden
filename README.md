@@ -89,7 +89,6 @@ Every fact on the site comes from buckslou.com: the history, people, dishes, pri
 1. **Live piano.** Our Story says Buck "provided nightly live piano music", and the concept presents it as nightly. Confirm the current schedule.
 2. **"Over 25 years"** comes from the Private Dining page. The restaurant was established in 1992, so the client may prefer "over 30 years".
 3. **Forms:**
-   - The forms are set up for Netlify Forms (`data-netlify`).
-   - On another host, point each form's `action` at the client's form handler.
-   - Until a handler exists, a failed submission tells the guest to call or email instead. It never shows a false success message.
+   - Each form opens the guest's own email app with the message already written to bucks@buckslou.com. This works on Cloudflare Pages with no server.
+   - To collect submissions on a server instead, add a form backend later.
 4. **Photography:** the original photos are low resolution (1200 px wide; the hero is 2500 × 800). A one-day evening shoot, covering the bar at candle-time, the piano and plated dinner service, would take this concept from strong to exceptional. The layout is ready to receive it.
