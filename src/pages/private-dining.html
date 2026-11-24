@@ -1,0 +1,68 @@
+<!-- {"title": "Private Dining & Events — Buck's Restaurant & Bar, Louisville", "description": "Private rooms for birthdays, anniversaries, rehearsal dinners, office parties and more — plus catering anywhere in the Louisville area. Buck's, Louisville's special-occasion destination.", "canonical": "private-dining", "nav": "private", "preload": ["china-black-800.webp"]} -->
+<main id="main">
+  <section class="page-hero">
+    <div class="page-hero__media">[[img:china-black|Antique china and silver laid on white linen|100vw|eager]]</div>
+    <div class="wrap">
+      <span class="crumb label" data-reveal>Private Dining &amp; Events</span>
+      <h1 class="display reveal-lines"><span class="line"><span>Gather in</span></span><span class="line"><span>the <em>Moon Garden.</em></span></span></h1>
+    </div>
+  </section>
+
+  <section class="section on-light">
+    <div class="wrap split">
+      <div class="split__a" data-reveal>
+        <p class="label label--champ">Louisville’s special-occasion destination</p>
+        <h2 class="h2" style="margin-top:1.2rem">Over 25 years of <em>making memories.</em></h2>
+      </div>
+      <div class="split__b" data-reveal style="--d:.1s">
+        <p class="lead">For birthdays, anniversaries and graduations, Buck’s has been making memories with superior service and outstanding cuisine. And when the celebration needs to be a little bigger, we can accommodate groups of any size.</p>
+        <p class="muted">Office parties, rehearsal dinners, receptions and gatherings of all types — with private rooms for almost any sized group. Buck’s can also cater your next event at any location in the area.</p>
+        <ul class="facts">
+          <li><span class="numeral">i.</span><span>Private rooms for almost any sized group</span></li>
+          <li><span class="numeral">ii.</span><span>Catering at any location in the Louisville area</span></li>
+          <li><span class="numeral">iii.</span><span>Hosted by General Manager Kris Littrell</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-block:0">
+    <div class="strip" id="pd-strip" data-strip tabindex="0" aria-label="Photos">
+      <figure><div class="img-reveal">[[img:garden-wide|White flowers on the bar|80vw]]</div></figure>
+      <figure><div class="img-reveal">[[img:lamb|Prosciutto Wrapped Lamb|60vw]]</div></figure>
+      <figure><div class="img-reveal">[[img:teapots|Antique china teapots with roses|60vw]]</div></figure>
+      <figure><div class="img-reveal">[[img:patio|Outdoor tables under a shade tree|80vw]]</div></figure>
+      <figure><div class="img-reveal">[[img:dacquoise|Mocha Dacquoise|60vw]]</div></figure>
+    </div>
+  </section>
+
+  <section class="section on-light" id="inquire" aria-labelledby="inq-title">
+    <div class="wrap split">
+      <div class="split__a" data-reveal>
+        <p class="label label--champ">Plan an event</p>
+        <h2 id="inq-title" class="h1" style="margin-top:1.2rem">Tell us about <em>the occasion.</em></h2>
+        <p class="muted" style="margin-top:1.4rem">Share the date and number of guests and we’ll be in touch. Prefer to talk it through? Call <a class="link" href="tel:+15026375284">(502) 637-5284</a>.</p>
+        <p class="fineprint" style="margin-top:2rem">Due to the small seating capacity of our restaurant, we require a credit card deposit to reserve a party of 10 or more. We reserve the right not to seat until all parties are present. Parties who are 15 minutes late without notice will void their reservations.</p>
+      </div>
+      <form class="split__b form" name="private-dining" method="POST" action="/" data-form data-netlify="true" netlify-honeypot="company-website" data-success="Thank you. We’ll be in touch shortly to plan your evening.">
+        <input type="hidden" name="form-name" value="private-dining">
+        <p class="sr-only"><label>Leave empty <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="pd-name">Name</label><input id="pd-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="pd-email">Email</label><input id="pd-email" type="email" name="email" required autocomplete="email"></div>
+        <div class="field"><label for="pd-phone">Phone</label><input id="pd-phone" type="tel" name="phone" autocomplete="tel"></div>
+        <div class="field"><label for="pd-date">Preferred date</label><input id="pd-date" type="date" name="date"></div>
+        <div class="field"><label for="pd-guests">Number of guests</label><input id="pd-guests" type="number" name="guests" min="1" inputmode="numeric" required></div>
+        <div class="field"><label for="pd-type">Occasion</label>
+          <select id="pd-type" name="occasion">
+            <option>Birthday</option><option>Anniversary</option><option>Graduation</option><option>Rehearsal dinner</option><option>Office party</option><option>Reception</option><option>Business meeting</option><option>Catering at another location</option><option>Something else</option>
+          </select>
+        </div>
+        <div class="field field--full"><label for="pd-msg">Anything else we should know?</label><textarea id="pd-msg" name="message"></textarea></div>
+        <div class="form__foot">
+          <p class="form-note" data-form-note aria-live="polite" style="color:#7c6944;margin:0"></p>
+          <button class="btn btn--green" type="submit">Send inquiry</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>

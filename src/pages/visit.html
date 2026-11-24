@@ -1,0 +1,77 @@
+<!-- {"title": "Visit & Contact — Buck's Restaurant & Bar, 425 W. Ormsby Ave, Louisville", "description": "Hours, directions, parking and contact for Buck's Restaurant & Bar in the Mayflower, 425 W. Ormsby Ave., Old Louisville. Reservations (502) 637-5284.", "canonical": "contact", "nav": "visit", "preload": ["exterior-800.webp"]} -->
+<main id="main">
+  <section class="page-hero page-hero--short">
+    <div class="page-hero__media">[[img:exterior|The walkway through the trees to Buck’s front door|100vw|eager]]</div>
+    <div class="wrap">
+      <span class="crumb label" data-reveal>Visit &amp; Contact</span>
+      <h1 class="h1 reveal-lines"><span class="line"><span>Through the trees,</span></span><span class="line"><span><em>to the door.</em></span></span></h1>
+    </div>
+  </section>
+
+  <section class="section on-light">
+    <div class="wrap visit">
+      <div class="visit__intro" data-reveal>
+        <p class="label label--champ">Buck’s in The Mayflower</p>
+        <address class="contact-lines lead" style="margin-top:1.2rem">
+          <span>425 W. Ormsby Ave.</span>
+          <span>Louisville, KY 40203</span>
+        </address>
+        <div class="contact-lines" style="margin-top:1.4rem">
+          <a href="tel:+15026375284">Reservations · (502) 637-5284</a>
+          <a href="mailto:bucks@buckslou.com">bucks@buckslou.com</a>
+          <span class="muted">Fax · (502) 637-7883</span>
+        </div>
+        <div class="hero__ctas">
+          <a class="btn btn--green" href="https://www.google.com/maps/dir/?api=1&amp;destination=Buck%27s+Restaurant+and+Bar+425+W+Ormsby+Ave+Louisville+KY+40203" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--ghost" href="https://tables.toasttab.com/restaurants/498c718b-2810-4400-83c8-0ea1e51d79a3/findTime" data-reserve>Reserve</a>
+        </div>
+      </div>
+      <div class="visit__cols">
+        <div data-reveal>
+          <h2 class="label" style="margin-bottom:1rem">Hours</h2>
+          <table class="hours">
+            <tbody>
+              <tr data-hours-row="1,2,3,4"><th scope="row">Mon – Thu</th><td>Lunch 11am – 2pm<br>Dinner 5 – 9pm</td></tr>
+              <tr data-hours-row="5"><th scope="row">Friday</th><td>Lunch 11am – 2pm<br>Dinner 5 – 10pm</td></tr>
+              <tr data-hours-row="6"><th scope="row">Saturday</th><td>Dinner 5 – 10pm</td></tr>
+              <tr data-hours-row="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div data-reveal style="--d:.1s">
+          <h2 class="label" style="margin-bottom:1rem">Parking</h2>
+          <p class="muted">On W. Ormsby Ave., half a block in — turn right into our parking lot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" >
+    <div class="wrap">
+      <div class="directions">
+        <div data-reveal><h4>From I-65 South</h4><p class="muted">Take Exit 135 (St. Catherine W). Turn right onto St. Catherine St. Turn left on S 4th Street. Turn right on W Ormsby Ave. In ½ block, turn right into our parking lot.</p></div>
+        <div data-reveal style="--d:.1s"><h4>From I-65 North</h4><p class="muted">Take Exit 135 (St. Catherine W). Continue straight on St. Catherine St. Turn left on S 4th Street. Turn right on W Ormsby Ave. In ½ block, turn right into our parking lot.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section on-light" aria-labelledby="contact-title">
+    <div class="wrap split">
+      <div class="split__a" data-reveal>
+        <p class="label label--champ">Write to us</p>
+        <h2 id="contact-title" class="h2" style="margin-top:1.2rem">Private parties, <em>gift certificates</em> &amp; questions.</h2>
+        <p class="muted" style="margin-top:1.4rem">For private parties, let us know the number of guests and the date. To purchase a gift certificate, tell us the amount and include your phone number so we can call for payment — or buy an e-gift card <a class="link" href="https://order.toasttab.com/egiftcards/bucks-restaurant-and-bar-425-w-ormsby" target="_blank" rel="noopener">online</a>.</p>
+      </div>
+      <form class="split__b form" name="contact" method="POST" action="/" data-form data-netlify="true" netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="sr-only"><label>Leave empty <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" required autocomplete="email"></div>
+        <div class="field"><label for="c-phone">Phone</label><input id="c-phone" type="tel" name="phone" autocomplete="tel"></div>
+        <div class="field"><label for="c-topic">About</label><select id="c-topic" name="topic"><option>A private party</option><option>A gift certificate</option><option>Something else</option></select></div>
+        <div class="field field--full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+        <div class="form__foot"><p class="form-note" data-form-note aria-live="polite" style="color:#7c6944;margin:0"></p><button class="btn btn--green" type="submit">Send</button></div>
+      </form>
+    </div>
+  </section>
+</main>

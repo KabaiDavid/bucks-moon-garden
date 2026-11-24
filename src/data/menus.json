@@ -1,0 +1,382 @@
+{
+ "updated": "June 10, 2026",
+ "menus": [
+  {
+   "name": "Lunch Menu",
+   "sections": [
+    {
+     "name": "Starters",
+     "note": "",
+     "items": [
+      {
+       "name": "Fried Green Tomatoes",
+       "description": "Classic fried green tomatoes topped with pimento cheese, a dash of sriracha, and scallions.",
+       "price": "13",
+       "vegetarian": true
+      },
+      {
+       "name": "Oysters Rockefeller",
+       "description": "Served with spinach ouzo béchamel, garnished with three cheeses and fresh parsley",
+       "price": "16",
+       "vegetarian": false
+      },
+      {
+       "name": "Crab Cakes",
+       "description": "Three lump crab cakes on a bed of spring mix, served with caper-basil rémoulade sauce.",
+       "price": "17",
+       "vegetarian": false
+      }
+     ]
+    },
+    {
+     "name": "Salads and Soup",
+     "note": "",
+     "items": [
+      {
+       "name": "Wedge Salad",
+       "description": "Iceberg lettuce, bleu cheese dressing, bacon, dried cranberries, grape tomatoes, cucumbers",
+       "price": "10",
+       "vegetarian": false
+      },
+      {
+       "name": "Caesar",
+       "description": "Romaine lettuce, three cheese blend, herb croutons, Caesar dressing.",
+       "price": "10",
+       "vegetarian": false
+      },
+      {
+       "name": "Briar Patch Salad",
+       "description": "Strawberries, blackberries, and raspberries, feta cheese, red onions, and candied pecans over spring mix, tossed with a blackberry vinaigrette.",
+       "price": "13",
+       "vegetarian": true
+      },
+      {
+       "name": "Curry Chicken Salad",
+       "description": "Grilled chicken, rotini pasta, toasted almonds, red peppers, tossed in a mango-peach chutney, curry aioli, on a pineapple boat.",
+       "price": "15",
+       "vegetarian": false
+      },
+      {
+       "name": "Kentucky Cobb",
+       "description": "Baby greens tossed in spiced peach vinaigrette, topped with egg, prosciutto, tomato, bleu cheese crumbles, corn, diced peppers.",
+       "price": "16",
+       "vegetarian": false
+      },
+      {
+       "name": "Soup du Jour",
+       "description": "Ask your server for today's soup.",
+       "price": null,
+       "variants": [
+        {
+         "name": "Cup",
+         "price": "6"
+        },
+        {
+         "name": "Bowl",
+         "price": "8"
+        }
+       ],
+       "vegetarian": false
+      }
+     ]
+    },
+    {
+     "name": "Sandwiches",
+     "note": "All sandwiches served with your choice of coleslaw, potato salad, or french fries.\n\n*(uncooked or undercooked) Consuming raw or undercooked foods may increase the risk of foodborne illness",
+     "items": [
+      {
+       "name": "Buck's Burger*",
+       "description": "House ground beef, Colby cheese, prosciutto, green tomato jam, spring mix, balsamic mayo, brioche bun.",
+       "price": "17",
+       "vegetarian": false
+      },
+      {
+       "name": "Caesar Chicken Sandwich",
+       "description": "Grilled chicken breast with romaine lettuce, tossed in a spicy Caesar dressing and three-cheese blend on Texas toast.",
+       "price": "13",
+       "vegetarian": false
+      },
+      {
+       "name": "Caprese Chicken Sandwich",
+       "description": "Grilled chicken with heirloom tomatoes, mozzarella, and basil pesto served open-faced on marbled rye, finished with balsamic glaze.",
+       "price": "16",
+       "vegetarian": false
+      },
+      {
+       "name": "Fish Sandwich",
+       "description": "Panko encrusted cod, topped with coleslaw, basil caper tartar sauce, on marbled rye.",
+       "price": "15",
+       "vegetarian": false
+      }
+     ]
+    },
+    {
+     "name": "Entrees",
+     "note": "",
+     "items": [
+      {
+       "name": "Buck's Hot Brown",
+       "description": "Roasted turkey, prosciutto, Swiss, on Texas toast topped with tomato and bacon finished with Mornay sauce.",
+       "price": "16",
+       "vegetarian": false
+      },
+      {
+       "name": "Petite Filet",
+       "description": "5 oz. Choice filet over a potato cake, asparagus, topped with demi-glace.",
+       "price": "23",
+       "vegetarian": false
+      },
+      {
+       "name": "Crispy Fish",
+       "description": "Fried cod over jasmine rice, finished with sautéed bell peppers and red onions in a spicy sweet Thai-chili sauce, garnished with green onions.",
+       "price": "15",
+       "vegetarian": false
+      },
+      {
+       "name": "Buck's Stir Fry",
+       "description": "Stir-fried chicken, mushrooms, red onions, baby corn, water chestnuts, snow peas, oyster-sesame sauce. Garnished with green onions.",
+       "price": "15",
+       "vegetarian": false
+      },
+      {
+       "name": "Rasta Pasta",
+       "description": "Blackened salmon with gemelli pasta tossed in Cajun-cream sauce, onions and peppers.",
+       "price": "25",
+       "vegetarian": false
+      },
+      {
+       "name": "Spicy Noodles",
+       "description": "Stir-fried curry chicken, bell peppers, onion, mushrooms, tossed in a spicy hoisin and Thai-chili sauce over Cantonese noodles.",
+       "price": "15",
+       "vegetarian": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Dinner Menu",
+   "sections": [
+    {
+     "name": "Appetizers",
+     "note": "",
+     "items": [
+      {
+       "name": "Oysters Rockefeller",
+       "description": "Over spinach ouzo bechamel, topped with three cheese blend and parsley.",
+       "price": "17",
+       "vegetarian": false
+      },
+      {
+       "name": "Bacon Wrapped Shrimp",
+       "description": "Over apple curry chutney, topped with pineapple salsa and green onions.",
+       "price": "18",
+       "vegetarian": false
+      },
+      {
+       "name": "Fried Chicken Livers",
+       "description": "Tossed in a spicy maple bourbon sauce, served with Giardiniera.",
+       "price": "16",
+       "vegetarian": false
+      },
+      {
+       "name": "Bruschetta",
+       "description": "French baguette toasted and topped with diced tomatoes, garlic, onion, basil, parmesan, and balsamic glaze.",
+       "price": "14",
+       "vegetarian": true
+      },
+      {
+       "name": "Roasted Meatballs",
+       "description": "Traditional pork and beef meatballs served over spicy marinara topped with mozzarella.",
+       "price": "17",
+       "vegetarian": false
+      }
+     ]
+    },
+    {
+     "name": "Salads and Soup",
+     "note": "",
+     "items": [
+      {
+       "name": "House",
+       "description": "Spring mix, cucumbers, red onions, grape tomatoes, candied pecans, spiced peach vinaigrette.",
+       "price": "11",
+       "vegetarian": true
+      },
+      {
+       "name": "Classic Wedge Salad",
+       "description": "Iceberg lettuce, bleu cheese dressing, bacon, dried cranberries, grape tomatoes, cucumbers.",
+       "price": "11",
+       "vegetarian": false
+      },
+      {
+       "name": "Apple Orchard",
+       "description": "Sliced Granny Smith apples, berries, red onions, and candied pecans over spring mix tossed with an apple cider honey vinaigrette.",
+       "price": "13",
+       "vegetarian": true
+      },
+      {
+       "name": "Caesar Salad*",
+       "description": "Romaine lettuce, three cheese blend, herb croutons, Caesar dressing.",
+       "price": "10",
+       "vegetarian": false
+      },
+      {
+       "name": "Roasted Beet and Mini Pear Salad",
+       "description": "Aged gorgonzola, candied pecans, balsamic and spiced peach vinaigrette.",
+       "price": "13",
+       "vegetarian": true
+      },
+      {
+       "name": "Soup du Jour",
+       "description": "Ask your server for today's soup.",
+       "price": null,
+       "variants": [
+        {
+         "name": "Cup",
+         "price": "7"
+        },
+        {
+         "name": "Bowl",
+         "price": "9"
+        }
+       ],
+       "vegetarian": false
+      }
+     ]
+    },
+    {
+     "name": "Entrees",
+     "note": "Add to any dish: Grilled Shrimp - $18, Seared Scallops - $29, 8 oz. Lobster Tail - $49      \n*Uncooked or undercooked - Consuming raw or undercooked foods may increase risk of foodborne illness.   \n$7 charge for split entrees. 20% gratuity added to parties of six or more. Menu items and pricing are subject to change at any time without notice.",
+     "items": [
+      {
+       "name": "Filet Mignon*",
+       "description": "Cast iron seared filet topped with aged gorgonzola, served with mashed potatoes and asparagus, finished with demi-glace.",
+       "price": "59",
+       "vegetarian": false
+      },
+      {
+       "name": "New York Strip*",
+       "description": "Topped with a black truffle and garlic compound butter over sweet potato hash and roasted Haricots verts.",
+       "price": "61",
+       "vegetarian": false
+      },
+      {
+       "name": "Beef Short Rib Wellington",
+       "description": "Braised short rib wrapped in puff pastry with mirepoix purée, served over mashed potatoes and asparagus, finished with demi-glace.",
+       "price": "43",
+       "vegetarian": false
+      },
+      {
+       "name": "Pork Chop",
+       "description": "Seared with brown butter and thyme, over Weisenberger grits and crispy Brussels sprouts, finished with a pineapple sage bourbon glaze.",
+       "price": "47",
+       "vegetarian": false
+      },
+      {
+       "name": "Prosciutto Wrapped Lamb*",
+       "description": "Lamb rack wrapped in prosciutto then cast iron seared with rosemary. Served with shrimp over saffron mashed potatoes and asparagus, finished with demi-glace.",
+       "price": "63",
+       "vegetarian": false
+      },
+      {
+       "name": "Master Ribeye*",
+       "description": "Grilled ribeye, butter poached lobster tail, scallops, grilled shrimp and scallop skewer, fried oysters, mashed potatoes, and asparagus finished with demi-glace and served with a grilled lemon and a side of drawn butter.",
+       "price": "155",
+       "vegetarian": false
+      },
+      {
+       "name": "Chilean Sea Bass",
+       "description": "Served with risotto Alfredo, a trio of grilled shrimp, and asparagus, topped with lemon pesto.",
+       "price": "59",
+       "vegetarian": false
+      },
+      {
+       "name": "Lobster Tail",
+       "description": "Pan-seared lobster tail over mashed potatoes and asparagus, finished with a bourbon cream pan sauce and crispy bacon.",
+       "price": "69",
+       "vegetarian": false
+      },
+      {
+       "name": "Seared Scallops",
+       "description": "Over saffron risotto with sliced asparagus, mushrooms, and roasted cauliflower finished with garlic butter sauce and chopped bacon.",
+       "price": "55",
+       "vegetarian": false
+      },
+      {
+       "name": "Chicken Marsala",
+       "description": "Seared chicken breast over mashed potatoes finished with a Marsala pan sauce of mushrooms, onions, thyme, and cherry tomatoes. Served with fresh asparagus.",
+       "price": "35",
+       "vegetarian": false
+      },
+      {
+       "name": "Quail",
+       "description": "Pan-roasted quail with pears and blueberries over Weisenberger grits and asparagus, in a bourbon maple pan sauce.",
+       "price": "49",
+       "vegetarian": false
+      },
+      {
+       "name": "Crab & Shrimp Linguine",
+       "description": "Crab and shrimp sautéed in a white wine and lemon cream sauce with garlic chips, served over linguine.",
+       "price": "39",
+       "vegetarian": false
+      },
+      {
+       "name": "Crispy Fish",
+       "description": "Fried cod over jasmine rice, finished with sautéed bell peppers and red onions in a spicy sweet Thai chili sauce, garnished with green onions.",
+       "price": "35",
+       "vegetarian": false
+      },
+      {
+       "name": "Spicy Noodles",
+       "description": "Stir fried curry chicken, bell peppers, red onions, mushrooms tossed in a spicy hoisin sauce, garnished with green onions",
+       "price": "29",
+       "vegetarian": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Dessert Menu",
+   "sections": [
+    {
+     "name": "Desserts",
+     "note": "",
+     "items": [
+      {
+       "name": "Mocha Dacquoise",
+       "description": "Mocha butter cream and Chantilly rum crème layered between baked almond meringue, dusted with powdered sugar and drizzled with chocolate.",
+       "price": "14",
+       "vegetarian": true
+      },
+      {
+       "name": "Apple Cobbler",
+       "description": "Farm fresh Granny Smith apples, candied cranberries, and cookie crumble topped with vanilla ice cream and bourbon creme.",
+       "price": "10",
+       "vegetarian": true
+      },
+      {
+       "name": "Crème Brûlée",
+       "description": "Vanilla custard topped with caramelized sugar.",
+       "price": "12",
+       "vegetarian": true
+      },
+      {
+       "name": "Bread Pudding",
+       "description": "Cinnamon spiced custard, topped with bourbon caramel.",
+       "price": "10",
+       "vegetarian": true
+      },
+      {
+       "name": "Triple Layer Chocolate Cake",
+       "description": "Three-layer chocolate cake served with a scoop of vanilla ice cream.",
+       "price": "12",
+       "vegetarian": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
